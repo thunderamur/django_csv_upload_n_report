@@ -1,0 +1,8 @@
+<div class="btn-group" role="group" aria-label="Menu">
+  <a href="{% url 'csv_report:stat' %}"
+     class="btn {% if menu == 'stat' %} btn-outline-secondary {% else %} btn-secondary {% endif %}">Статистика</a>
+  <a href="{% url 'csv_report:upload_csv' %}"
+     class="btn {% if menu == 'upload' %} btn-outline-secondary {% else %} btn-secondary {% endif %}">Загрузить CSV</a>
+  <a href="{% url 'csv_report:report' %}"
+     class="btn {% if menu == 'report' %} btn-outline-secondary {% else %} btn-secondary {% endif %}">Отчет</a>
+</div>

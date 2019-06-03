@@ -1,0 +1,25 @@
+{% extends 'csv_report/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="card my-4">
+  <div class="card-body">
+    <h4 class="card-title">Статистика</h4>
+    {% if status %}
+      <div class="alert alert-success" role="alert">
+        Файл загружен успешно!
+      </div>
+    {% endif %}
+    <table class="table">
+      {% for row in info %}
+        <tr>
+          <td>{{ row.0 }}</td>
+          <td>{{ row.1 }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+
+{% endblock %}

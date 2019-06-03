@@ -1,0 +1,17 @@
+{% extends 'csv_report/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="card my-4">
+  <div class="card-body">
+    <h4 class="card-title">Загрузка CSV-файла</h4>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <button type="submit" class="btn btn-primary mt-4">Загрузить</button>
+    </form>
+  </div>
+</div>
+
+{% endblock %}

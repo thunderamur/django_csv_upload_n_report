@@ -1,0 +1,4 @@
+django
+pip-tools
+django-crispy-forms
+psycopg2-binary
