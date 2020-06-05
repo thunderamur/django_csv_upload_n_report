@@ -5,10 +5,10 @@
 #    pip-compile requirements.in
 #
 click==7.0                # via pip-tools
-django-crispy-forms==1.7.2
-django==2.2.2
-pip-tools==3.7.0
-psycopg2-binary==2.8.2
+django-crispy-forms==1.7.2  # via -r requirements.in
+django==2.2.13            # via -r requirements.in
+pip-tools==3.7.0          # via -r requirements.in
+psycopg2-binary==2.8.2    # via -r requirements.in
 pytz==2019.1              # via django
 six==1.12.0               # via pip-tools
 sqlparse==0.3.0           # via django
